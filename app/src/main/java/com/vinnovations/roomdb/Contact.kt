@@ -11,5 +11,6 @@ data class Contact(
     val id : Long,
     val name: String,
     val mobile: String,
-    val createdDate: Date
+    val createdDate: Date,
+    val isActive: Int
 )

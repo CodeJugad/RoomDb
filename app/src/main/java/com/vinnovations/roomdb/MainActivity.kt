@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         GlobalScope.launch {
             // this can only call with coroutine or with a suspend function
-            database.contactDao().insertContact(Contact(0, "yogi", "88898", Date()))
+            database.contactDao().insertContact(Contact(0, "yogi", "88898", Date(), 1))
         }
 
     }

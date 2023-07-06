@@ -16,9 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // this is not a good practice generally people use singleton for this
-        database = Room.databaseBuilder(applicationContext,
-                   ContactDatabase::class.java,
-                   "contactDB").build()
+        database = ContactDatabase.getDatabase(this)
 
         GlobalScope.launch {
             // this can only call with coroutine or with a suspend function

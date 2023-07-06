@@ -6,6 +6,7 @@ import androidx.room.*
 @Dao
 interface ContactDao{
 
+// suspend will work with coroutines
  @Insert
  suspend fun insertContact(contact: Contact)
 
